@@ -1,8 +1,9 @@
-@include url("atelier.scss");
+@import "atelier.scss";
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -17,7 +18,7 @@ body {
 }
 h1 {
   font-size: 64px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 h2 {
