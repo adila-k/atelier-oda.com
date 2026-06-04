@@ -1,19 +1,34 @@
-nav {
-  color: #3b3029 !important;
+.navbar {
   background-color: #fefbf8 !important;
 }
+
 .navbar__title--logo {
   font-size: 38px;
+  color: #3b3029 !important;
 }
 
-.navbar__title--nom {
-  font-size: 18px;
+.navbar__title {
+  line-height: 1.05;
+  &--name {
+    font-size: 16px;
+    color: #3b3029 !important;
+  }
 }
 
 .navbar-nav {
   font-size: 20px;
+  gap: 80px;
 }
-.nav-link:hover,
-.nav-link.active {
-  color: #557768 !important;
+@media (max-width: 768px) {
+  .navbar-bar {
+    gap: 40px;
+  }
+}
+
+.nav-link {
+  color: #3b3029 !important;
+  &:hover,
+  &.active {
+    color: #557768 !important;
+  }
 }
