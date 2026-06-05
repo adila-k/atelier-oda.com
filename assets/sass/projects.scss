@@ -16,18 +16,24 @@
     &-hover {
       height: 100%;
       width: 100%;
-      background-color: black;
+      background-color: rgba(0, 0, 0, 0.403);
       position: absolute;
       top: 0;
       left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      & .more-icon {
+        height: 50px;
+        width: 50px;
+      }
+    }
+    &-hover:hover {
+      opacity: 1;
     }
     /*********** Hover effect ***********/
   }
-}
-
-.more-icon {
-  height: 50px;
-  width: 50px;
 }
 
 .projects-grid .row {
