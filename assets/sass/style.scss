@@ -1,4 +1,5 @@
 @import url(/assets/css/header.min.css);
+@import url(/assets/css/footer.min.css);
 @import "atelier.scss";
 @import "projects.scss";
 
@@ -15,6 +16,7 @@
 
 body {
   font-family: "DM-sans";
+  font-size: 18px;
   background-color: #fefbf8;
   color: #3b3029;
   padding: 50px;
