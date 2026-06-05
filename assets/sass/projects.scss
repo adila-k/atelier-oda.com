@@ -14,6 +14,9 @@
   height: 100%;
   object-fit: cover;
 }
+.more-icon {
+  position: absolute;
+}
 
 .projects-grid .row {
   --bs-gutter-x: 70px;
@@ -24,19 +27,6 @@
 
 /* Hover effect */
 
-.project__picture-hover {
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  position: absolute;
-  opacity: 0.3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project__picture-hover img {
-  height: 50px;
-  width: 50px;
-  opacity: 1;
+.project__picture img:hover {
+  filter: brightness(50%);
 }

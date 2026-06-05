@@ -12,15 +12,8 @@
     />
     <link rel="stylesheet" href="../css/style.min.css" />
     <link rel="stylesheet" href="../css/projects.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#header-content").load("header.html");
-      });
-    </script>
   </head>
   <body>
-    <div id="header-content"></div>
     <main>
       <section class="projects">
         <h1>projets</h1>
@@ -32,12 +25,14 @@
               <!-- Project card 1 -->
               <div class="project__card">
                 <div class="project__picture">
-                  <div class="project__picture-hover">
-                    <img src="../img/icons/hover-more-icon.png" alt="" />
-                  </div>
                   <img
                     src="../img/projects-images/VIL/villabe-vue-exterieure.jpg"
                     alt=""
+                  />
+                  <img
+                    src="../img/icons/hover-more-icon.png"
+                    alt=""
+                    class="more-icon"
                   />
                 </div>
                 <a href="#">Conservatoire de musique Yves Henry</a>
