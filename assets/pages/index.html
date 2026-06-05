@@ -1,26 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>atelier oda</title>
     <link rel="stylesheet" href="/assets/css/style.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#header-content").load("header.html", function () {
+          const currentPage = window.location.pathname.split("/").pop();
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="navbar__left">
-          <div class="logo">atelier oda</div>
-          <div class="nom">olivier duffé architecte</div>
-        </div>
-        <div class="navbar__right">
-          <ul class="nav-links">
-            <li><a href="#">projets</a></li>
-            <li><a href="#">ecosystème</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <div id="header-content"></div>
+    page index
   </body>
 </html>

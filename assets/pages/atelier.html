@@ -10,11 +10,29 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/assets/css/style.min.css" />
-    <title>Document</title>
+    <title>L'atelier | atelier oda - olivier duffé</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#header-content").load("header.html", function () {
+          const currentPage = window.location.pathname.split("/").pop();
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body>
+    <div id="header-content"></div>
     <section class="container-fluid row">
-      <h1 class="mb-5">l'atelier</h1>
+      <h1 class="mb-5">Atelier</h1>
       <section class="container-fluid row">
         <section class="col-md-4">
           <div class="align-items-start mt-3">
@@ -74,11 +92,14 @@
         </section>
       </section>
     </section>
-    <section class="container-fluid row align-items-center text-center">
+    <section class="container-fluid align-items-center text-center mt-5">
       <h2>MON PORTFOLIO</h2>
-      <button>
+      <button class="mt-5 p-2">
         Référence 2026 (PDF, 25.6 MB)
-        <img src="/assets/img/projects-images/align-bottom-svgrepo-com 1.svg" />
+        <img
+          class=""
+          src="/assets/img/projects-images/align-bottom-svgrepo-com 1.svg"
+        />
       </button>
     </section>
   </body>
