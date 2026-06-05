@@ -1,3 +1,86 @@
+footer,
 a {
   text-decoration: none;
+  color: #3b3029 !important;
+}
+
+hr {
+  background-color: #3b3029;
+}
+
+.footer {
+  background-color: #fefbf8;
+
+  &__brand {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0 !important;
+    margin-bottom: 40px;
+  }
+
+  &__data {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    &--label {
+      font-size: 16px;
+      font-weight: 600;
+      color: #3b3029;
+      margin-bottom: 8px;
+    }
+
+    &--value {
+      font-size: 16px;
+      color: #3b3029;
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav {
+    gap: 60px;
+    margin-bottom: 30px;
+
+    @media (max-width: 480px) {
+      gap: 24px;
+    }
+
+    &--link {
+      font-size: 16px;
+      color: #3b3029;
+      text-decoration: none;
+
+      &:hover {
+        color: #557768;
+      }
+    }
+  }
+
+  &__scroll-top {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__scroll-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #3b3029;
+    background: transparent;
+    color: #3b3029;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+
+    &:hover {
+      background-color: #3b3029;
+      color: #fefbf8;
+    }
+  }
 }
