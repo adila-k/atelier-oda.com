@@ -12,8 +12,26 @@
     />
     <link rel="stylesheet" href="../css/style.min.css" />
     <link rel="stylesheet" href="../css/projects.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#header-content").load("header.html", function () {
+          const currentPage = window.location.pathname.split("/").pop();
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body>
+    <div id="header-content"></div>
     <main>
       <section class="projects">
         <h1>projets</h1>
