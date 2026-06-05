@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>atelier oda</title>
     <link rel="stylesheet" href="/assets/css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <footer>
@@ -19,19 +23,20 @@
           <p class="navbar__title--logo mb-0">atelier oda</p>
           <p class="navbar__title--name mt-0">olivier duffé architecte</p>
         </div>
-        <div class="footer__data">
+
+        <div class="footer__data__block">
           <p class="footer__data--label">adresse</p>
           <p class="footer__data--value">
             42, rue des meuniers, 93100 montreuil
           </p>
-          <div class="footer__data">
-            <p class="footer__data--label">téléphone</p>
-            <p class="footer__data--value">+33 6 60 47 37 88</p>
-          </div>
-          <div class="footer__data">
-            <p class="footer__data--label">email</p>
-            <p class="footer__data--value">contact@atelier-oda.com</p>
-          </div>
+        </div>
+        <div class="footer__data__block">
+          <p class="footer__data--label">téléphone</p>
+          <p class="footer__data--value">+33 6 60 47 37 88</p>
+        </div>
+        <div class="footer__data__block">
+          <p class="footer__data--label">email</p>
+          <p class="footer__data--value">contact@atelier-oda.com</p>
         </div>
       </div>
       <!-- 
@@ -39,37 +44,34 @@
       ----------------------NAV LINKS------------------------------
       =============================================================
        -->
-      <div
-            class="collapse navbar-collapse d-flex justify-content-center"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav">
-              <a
-                class="nav-link"
-                aria-label="page projets"
-                href="/assets/pages/projets.html"
-                >PROJET</a
-              >
-              <a
-                class="nav-link"
-                aria-label="page atelier"
-                href="/assets/pages/atelier.html"
-                >L'ATELIER</a
-              >
-              <a
-                class="nav-link"
-                aria-label="page contact"
-                href="/assets/pages/contact.html"
-                >CONTACT</a
-              >
-            </div>
+
+      <div class="footer__nav d-flex justify-content-center">
+        <a
+          class="footer__nav--link"
+          aria-label="page projets"
+          href="/assets/pages/projets.html"
+          >PROJET</a
+        >
+        <a
+          class="footer__nav--link"
+          aria-label="page atelier"
+          href="/assets/pages/atelier.html"
+          >L'ATELIER</a
+        >
+        <a
+          class="footer__nav--link"
+          aria-label="page contact"
+          href="/assets/pages/contact.html"
+          >CONTACT</a
+        >
+      </div>
       <div class="footer__scroll-top">
         <button
           onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
           class="footer__scroll-btn"
           aria-label="Retour en haut"
         >
-          &#8963;
+          <i class="fa-solid fa-chevron-up"></i>
         </button>
       </div>
     </footer>

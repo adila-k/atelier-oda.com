@@ -17,12 +17,33 @@ hr {
     gap: 40px;
     padding: 0 !important;
     margin-bottom: 40px;
+    & > * {
+      flex: 1 1 0;
+    }
   }
+
+  /*  &__separator {
+    width: 1px;
+    height: 60px;
+    background-color: #3b3029;
+    flex-shrink: 0;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  } */
 
   &__data {
     display: flex;
+
     align-items: flex-start;
     gap: 40px;
+
+    &--block {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
 
     &--label {
       font-size: 16px;
@@ -35,25 +56,6 @@ hr {
       font-size: 16px;
       color: #3b3029;
       margin-bottom: 0;
-    }
-  }
-
-  &__nav {
-    gap: 60px;
-    margin-bottom: 30px;
-
-    @media (max-width: 480px) {
-      gap: 24px;
-    }
-
-    &--link {
-      font-size: 16px;
-      color: #3b3029;
-      text-decoration: none;
-
-      &:hover {
-        color: #557768;
-      }
     }
   }
 
@@ -81,6 +83,27 @@ hr {
     &:hover {
       background-color: #3b3029;
       color: #fefbf8;
+    }
+  }
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+
+  @media (max-width: 480px) {
+    gap: 24px;
+  }
+
+  &--link {
+    font-size: 16px;
+    color: #3b3029 !important;
+    text-decoration: none;
+
+    &:hover {
+      color: #557768 !important;
     }
   }
 }
