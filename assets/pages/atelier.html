@@ -14,7 +14,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(document).ready(function () {
-        $("#header-content").load("header.html");
+        $("#header-content").load("header.html", function () {
+          const currentPage = window.location.pathname.split("/").pop();
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        });
       });
     </script>
   </head>
@@ -56,14 +67,14 @@
               des chantiers, aux enveloppes et aux
               <strong>calendriers respectés</strong>.
             </p>
-             
+             
             <p class="mb-5 text-justify">
               Les projets en cours de développement par l’atelier depuis
-              2025 s’inscrivent dans une
+              2025 s’inscrivent dans une
               <strong
                 >architecture contextuelle et singulière, soucieuse de son site,
                 de son époque et de ses habitants</strong
-              >. 
+              >. 
             </p>
           </div>
         </section>
@@ -75,10 +86,10 @@
             <li class="mt-5 mb-3 d-flex">Grand Paris Sud</li>
             <li class="mb-3 d-flex">Pavillon de l'Arsenal</li>
             <li class="mb-3 d-flex">Ville de Cluny</li>
-            <li class="mb-3 d-flex">Ville de Neuilly-sur-Marne</li>
+            <li class="mb-3 d-flex">Ville de Neuilly-sur-Marne</li>
             <li class="mb-3 d-flex">Faire Paris - Pavillon de l'Arsenal</li>
             <li class="mb-3 d-flex">Europan</li>
-            <li class="mb-3 d-flex">Ville de Dunkerque</li>
+            <li class="mb-3 d-flex">Ville de Dunkerque</li>
           </div>
           <div class="mt-5 border-top border-bottom border-dark">
             <h3 class="py-5">NOS PARTENAIRES</h3>
@@ -90,12 +101,12 @@
             <li class="mb-3 d-flex">AgirAcoustique</li>
             <li class="mb-3 d-flex">Ecovégétal</li>
             <li class="mb-3 d-flex">TECO</li>
-            <li class="mb-3 d-flex">Projelec </li>
+            <li class="mb-3 d-flex">Projelec </li>
             <li class="mb-3 d-flex">ME2CO</li>
             <li class="mb-3 d-flex">sam architecture</li>
             <li class="mb-3 d-flex">Agnès Lahaye</li>
-           <!--  <li class="mb-3 d-flex">Nicolas Têtu</li> -->
-           <!--  <li class="mb-3 d-flex">Terrell</li> -->
+           <li class="mb-3 d-flex">Nicolas Têtu</li>
+           <li class="mb-3 d-flex">Terrell</li>
           </div>
         </section>
       </section>
