@@ -1,5 +1,3 @@
-console.log("script chargé");
-
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".project__card");
   let visibleCards = [];
