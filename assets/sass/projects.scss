@@ -1,4 +1,6 @@
+/************************************/
 /*********** Project card ***********/
+/************************************/
 .project {
   &__card {
     width: 100%;
@@ -16,18 +18,29 @@
     &-hover {
       height: 100%;
       width: 100%;
-      background-color: black;
+      background-color: rgba(0, 0, 0, 0.403);
       position: absolute;
       top: 0;
       left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      & .more-icon {
+        height: 50px;
+        width: 50px;
+      }
+      &.active {
+        opacity: 1;
+      }
     }
+    /************************************/
     /*********** Hover effect ***********/
+    /************************************/
+    &-hover:hover {
+      opacity: 1;
+    }
   }
-}
-
-.more-icon {
-  height: 50px;
-  width: 50px;
 }
 
 .projects-grid .row {
