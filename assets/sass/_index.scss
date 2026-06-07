@@ -1,17 +1,37 @@
-.projects-highlights {
-  &__btn-container {
+.atelier-highlights {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  gap: 70px;
+  padding: 150px 0 100px;
+  &__informations-wrapper {
+    width: 100%;
     display: flex;
-    flex-flow: column nowrap;
-    gap: 45px;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
   }
+  &__informations {
+    width: 500px;
+    flex: 1;
+    & li {
+      list-style-type: none;
+      text-align: left;
+    }
+  }
+  &__informations:first-child {
+    padding-right: 15px;
+  }
+  &__informations:not(:first-child) {
+    border-left: 0.5px solid #3b3029;
+    padding-left: 15px;
+  }
+}
+.informations-title {
+  font-size: 1.125rem;
 }
 
-.btn-portfolio {
-  background-color: transparent;
-  text-transform: uppercase;
+.informations-item {
+  font-size: 1rem;
   font-weight: 200;
-  border: 1px solid #3b3029;
-  padding: 20px 30px;
-  flex: 1;
 }
