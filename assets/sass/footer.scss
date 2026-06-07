@@ -6,6 +6,7 @@ a {
 
 hr {
   background-color: #3b3029;
+  margin-bottom: 80px;
 }
 
 .footer {
@@ -17,12 +18,16 @@ hr {
     gap: 40px;
     padding: 0 !important;
     margin-bottom: 40px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 24px;
+    }
     & > * {
       flex: 1 1 0;
     }
   }
 
-  /*  &__separator {
+  &__separator {
     width: 1px;
     height: 60px;
     background-color: #3b3029;
@@ -31,18 +36,15 @@ hr {
     @media (max-width: 767px) {
       display: none;
     }
-  } */
+  }
 
   &__data {
-    display: flex;
-
-    align-items: flex-start;
-    gap: 40px;
-
     &--block {
       display: flex;
-      flex-direction: column;
-      gap: 4px;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+      flex: 1 1 0;
     }
 
     &--label {
@@ -50,6 +52,9 @@ hr {
       font-weight: 600;
       color: #3b3029;
       margin-bottom: 8px;
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
 
     &--value {
