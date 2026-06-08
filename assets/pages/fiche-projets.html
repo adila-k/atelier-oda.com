@@ -4,10 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiche Projet | atelier oda</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/assets/css/style.min.css" />
     <script type="module" src="/assets/js/fiche-projet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#header-content").load("header.html", function () {
+          const currentPage = window.location.pathname.split("/").pop();
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        });
+
+        $("#footer-content").load("footer.html", function () {});
+      });
+    </script>
   </head>
   <body>
+    <div id="header-content"></div>
     <section class="fiche"></section>
   </body>
 </html>

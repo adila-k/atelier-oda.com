@@ -11,7 +11,9 @@
     "images": "atelier hugo louaintier",
     "img_1": "/assets/img/projects-images/VIL/villabe-vue-exterieure.jpg",
     "img_2": "assets/img/VIL/villabe-coupe-01.jpg",
-    "img_3": "assets/img/VIL/villabe-coupe-02.jpg"
+    "img_3": "assets/img/VIL/villabe-coupe-02.jpg",
+    "img_4": "/assets/img/projects-images/VIL/villabe-plan-masse.jpg",
+    "img_5": "/assets/img/projects-images/VIL/villabe-plan-rdc.jpg"
   },
 
   {
@@ -21,7 +23,10 @@
     "programme": "Appel à idées",
     "maitrise-ouvrage": "Pavillon de l'Arsenal",
     "equipe": "oda (architecte mandataire), Ecovégétal (Bureau d'études techniques)",
-    "images": "oda"
+    "images": "oda",
+    "img_1": "/assets/img/projects-images/FAI/FAI_03.png",
+    "img_2": "/assets/img/projects-images/FAI/FAI_01.png",
+    "img_3": "/assets/img/projects-images/FAI/FAI_02.png"
   },
 
   {
@@ -32,7 +37,12 @@
     "maitrise-ouvrage": "Privé",
     "mission": "Mission Complète",
     "surface": "195m²",
-    "images": "atelier hugo louaintier"
+    "images": "atelier hugo louaintier",
+    "img_1": "/assets/img/projects-images/HOS/HOS_O3.png",
+    "img_2": "/assets/img/projects-images/HOS/HOS_O1.png",
+    "img_3": "/assets/img/projects-images/HOS/HOS_O4.png",
+    "img_4": "/assets/img/projects-images/HOS/hossegor-axonometrie.jpg",
+    "img_5": "/assets/img/projects-images/HOS/HOS_O3.png"
   },
 
   {
@@ -45,7 +55,14 @@
     "prix": "1 million d'€ H.T.",
     "surface": "300m²",
     "equipe": "oda (architecte mandataire) - Hort (Architecte associé) - TECO (BE structure) - Projelec (BE fluides) - ME2CO (Economiste)",
-    "images": "oda"
+    "images": "oda",
+    "img_1": "/assets/img/projects-images/CLU/cluny-perspective-exterieure.jpg",
+    "img_2": "/assets/img/projects-images/CLU/cluny-plan-01.jpg",
+    "img_3": "/assets/img/projects-images/CLU/cluny-plan-02.jpg",
+    "img_4": "/assets/img/projects-images/CLU/cluny-plan-masse.jpg",
+    "img_5": "/assets/img/projects-images/CLU/cluny-coupe.jpg",
+    "img_6": "/assets/img/projects-images/CLU/cluny-façade.jpg",
+    "img_7": "/assets/img/projects-images/CLU/cluny-perspective-interieure.jpg"
   },
 
   {
@@ -56,7 +73,9 @@
     "maitrise-ouvrage": "Ville de Neuilly-sur-Marne",
     "mission": "Concours",
     "equipe": "oda - sam architecture",
-    "images": "vizzlab"
+    "images": "vizzlab",
+    "img_1": "/assets/img/projects-images/NSM/NSM_02.png",
+    "img_2": "/assets/img/projects-images/NSM/NSM_01.png"
   },
 
   {
@@ -67,7 +86,11 @@
     "maitrise-ouvrage": "Faire Paris - Pavillon de l'Arsenal",
     "mission": "Appel à idées",
     "equipe": "oda (architecte mandataire)",
-    "images": "oda"
+    "images": "oda",
+    "img_1": "/assets/img/projects-images/BGH/BGH_01.png",
+    "img_2": "/assets/img/projects-images/BGH/BGH_02.png",
+    "img_3": "/assets/img/projects-images/BGH/BGH_03.png",
+    "img_4": "/assets/img/projects-images/BGH/BGH_04.png"
   },
 
   {
@@ -78,7 +101,11 @@
     "maitrise-ouvrage": "Eurapan",
     "mission": "Appel à idées",
     "equipe": "Olivier Duffé - Agnès Lahaye",
-    "images": "oda"
+    "images": "oda",
+    "img_1": "/assets/img/projects-images/BDX/BDX_01.png",
+    "img_2": "/assets/img/projects-images/BDX/BDX_02.png",
+    "img_3": "/assets/img/projects-images/BDX/BDX_03.png",
+    "img_4": "/assets/img/projects-images/BDX/BDX_04.png"
   },
 
   {
@@ -88,7 +115,12 @@
     "programme": "Etude urbaine et requalification du quartier Saint-Sever",
     "maitrise-ouvrage": "Europan",
     "mission": "Appel à idéees",
-    "images": "oda"
+    "images": "oda",
+    "img_1": "/assets/img/projects-images/ROU/ROU_01.png",
+    "img_2": "/assets/img/projects-images/ROU/ROU_02.png",
+    "img_3": "/assets/img/projects-images/ROU/ROU_04.png",
+    "img_4": "/assets/img/projects-images/ROU/ROU_05.png",
+    "img_5": "/assets/img/projects-images/ROU/ROU_03.png"
   },
 
   {
@@ -97,7 +129,12 @@
     "localisation": "Bordeaux (33)",
     "programme": "Construction d'une maison individuelle et d'un atelier d'artiste",
     "mission": "Concours",
-    "images": "oda"
+    "images": "oda",
+    "img_1": "/assets/img/projects-images/BDC/BDC_01.png",
+    "img_2": "/assets/img/projects-images/BDC/BDC_03.png",
+    "img_3": "/assets/img/projects-images/BDC/BDC_04.png",
+    "img_4": "/assets/img/projects-images/BDC/BDC_05.png",
+    "img_5": "/assets/img/projects-images/BDC/BDC_06.png"
   },
 
   {
@@ -108,7 +145,10 @@
     "maitrise-ouvrage": "Ville de Dunkerque",
     "mission": "Concours",
     "prix": "3 million d'€ H.T.",
-    "equipe": "Olivier Duffé - Nicolas Têtu - Terrell (BE structure)"
+    "equipe": "Olivier Duffé - Nicolas Têtu - Terrell (BE structure)",
+    "img_1": "/assets/img/projects-images/DKP/DKP_01.png",
+    "img_2": "/assets/img/projects-images/DKP/DKP_02.png",
+    "img_3": "/assets/img/projects-images/DKP/DKP_03.png"
   },
 
   {
@@ -119,6 +159,11 @@
     "maitrise-ouvrage": "Ville de Dunkerque",
     "mission": "Concours",
     "equipe": "Olivier Duffé - Nicolas Têtu",
-    "images": "Nicolas Têtu"
+    "images": "Nicolas Têtu",
+    "img_1": "/assets/img/projects-images/DKQ/DKQ_03.png",
+    "img_2": "/assets/img/projects-images/DKQ/DKQ_01.png",
+    "img_3": "/assets/img/projects-images/DKQ/DKQ_06.png",
+    "img_4": "/assets/img/projects-images/DKQ/DKQ_05.png",
+    "img_5": "/assets/img/projects-images/DKQ/DKQ_04.png"
   }
 ]

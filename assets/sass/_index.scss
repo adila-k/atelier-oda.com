@@ -1,9 +1,40 @@
+/*******************************/
+/*********** OVERALL ***********/
+/*******************************/
+
 @media (max-width: 768px) {
   body {
     padding: 0 16px;
   }
 }
 
+/**************************/
+/****** HERO SECTION ******/
+/**************************/
+
+/*****************************/
+/****** SECTION SECTION ******/
+/*****************************/
+
+.projects-highlights {
+  &__carousel {
+    &__cards-wrapper {
+      display: flex;
+      flex-flow: row no-wrap;
+      height: 530px;
+    }
+    &__card {
+      overflow: hidden;
+      &__picture {
+        height: 400px;
+      }
+    }
+  }
+}
+
+/****************************************/
+/****** ATELIER HIGHLIGHTS SECTION ******/
+/****************************************/
 .atelier-highlights {
   display: flex;
   flex-flow: column nowrap;
