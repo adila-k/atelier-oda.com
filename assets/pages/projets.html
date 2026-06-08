@@ -12,14 +12,46 @@
     />
     <link rel="stylesheet" href="../css/style.min.css" />
     <link rel="stylesheet" href="../css/projects.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#header-content").load("header.html", function () {
+          const currentPage = window.location.pathname.split("/").pop();
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        });
+
+        $("#footer-content").load("footer.html", function () {});
+      });
+    </script>
   </head>
   <body>
+    <div id="header-content"></div>
     <main>
+      <!------------------------------>
+      <!-- PROJECTS section (START) -->
+      <!------------------------------>
       <section class="projects">
         <h1>projets</h1>
+        <!--------------------------->
         <!-- PROJECTS GRID (START) -->
+        <!--------------------------->
+
         <div class="projects-grid container-fluid">
-          <!-- 1st row (START)-->
+          <!--------------------->
+          <!-- 1st row (START) -->
+          <!--------------------->
           <div class="row">
             <div class="col-md-4">
               <!-- Project card 1 -->
@@ -27,13 +59,19 @@
                 <div class="project__picture">
                   <img
                     src="../img/projects-images/VIL/villabe-vue-exterieure.jpg"
-                    alt=""
+                    alt="Image du projet du Conservatoire de musique Yves Henry"
                   />
-                  <img
-                    src="../img/icons/hover-more-icon.png"
-                    alt=""
-                    class="more-icon"
-                  />
+                  <!------------------------------------------->
+                  <!-- DIV FOR HOVER AND LINK TO THE PROJECT -->
+                  <!------------------------------------------->
+                  <a href=""
+                    ><div class="project__picture-hover">
+                      <img
+                        src="../img/icons/hover-more-icon.png"
+                        alt="-"
+                        class="more-icon"
+                      /></div
+                  ></a>
                 </div>
                 <a href="#">Conservatoire de musique Yves Henry</a>
               </div>
@@ -42,7 +80,21 @@
               <!-- Project card 2 -->
               <div class="project__card">
                 <div class="project__picture">
-                  <img src="../img/projects-images/HOS/HOS_O3.png" alt="" />
+                  <img
+                    src="../img/projects-images/HOS/HOS_O3.png"
+                    alt="Image du projet d'une maison individuelle"
+                  />
+                  <!------------------------------------------->
+                  <!-- DIV FOR HOVER AND LINK TO THE PROJECT -->
+                  <!------------------------------------------->
+                  <a href=""
+                    ><div class="project__picture-hover">
+                      <img
+                        src="../img/icons/hover-more-icon.png"
+                        alt="-"
+                        class="more-icon"
+                      /></div
+                  ></a>
                 </div>
                 <a href="#">Maison individuelle</a>
               </div>
@@ -53,21 +105,51 @@
                 <div class="project__picture">
                   <img
                     src="../img/projects-images/CLU/cluny-perspective-exterieure.jpg"
-                    alt=""
+                    alt="Image du projet de Centre social de la ville de Cluny "
                   />
+                  <!------------------------------------------->
+                  <!-- DIV FOR HOVER AND LINK TO THE PROJECT -->
+                  <!------------------------------------------->
+                  <a href=""
+                    ><div class="project__picture-hover">
+                      <img
+                        src="../img/icons/hover-more-icon.png"
+                        alt="-"
+                        class="more-icon"
+                      /></div
+                  ></a>
                 </div>
                 <a href="#">Centre social de la ville de Cluny</a>
               </div>
             </div>
           </div>
-          <!-- End 1st row (END)-->
-          <!-- 2nd row (START)-->
+          <!--------------------->
+          <!-- 1st row (END) -->
+          <!--------------------->
+
+          <!--------------------->
+          <!-- 2ND row (START) -->
+          <!--------------------->
           <div class="row">
             <div class="col-md-4">
               <!-- Project card 4 -->
               <div class="project__card">
                 <div class="project__picture">
-                  <img src="../img/projects-images/FAI/FAI_03.png" alt="" />
+                  <img
+                    src="../img/projects-images/FAI/FAI_03.png"
+                    alt="Image de toits d'habitation à Paris"
+                  />
+                  <!------------------------------------------->
+                  <!-- DIV FOR HOVER AND LINK TO THE PROJECT -->
+                  <!------------------------------------------->
+                  <a href=""
+                    ><div class="project__picture-hover">
+                      <img
+                        src="../img/icons/hover-more-icon.png"
+                        alt="- "
+                        class="more-icon"
+                      /></div
+                  ></a>
                 </div>
                 <a href="#">Appel à idées</a>
               </div>
@@ -76,7 +158,21 @@
               <!-- Project card 5 DONE -->
               <div class="project__card">
                 <div class="project__picture">
-                  <img src="../img/projects-images/DKP/DKP_03.png" alt="" />
+                  <img
+                    src="../img/projects-images/DKP/DKP_03.png"
+                    alt="Image du projet d'une solution pour piétons et cycles"
+                  />
+                  <!------------------------------------------->
+                  <!-- DIV FOR HOVER AND LINK TO THE PROJECT -->
+                  <!------------------------------------------->
+                  <a href=""
+                    ><div class="project__picture-hover">
+                      <img
+                        src="../img/icons/hover-more-icon.png"
+                        alt="-"
+                        class="more-icon"
+                      /></div
+                  ></a>
                 </div>
                 <a href="#">Solution pour piètons et cycles</a>
               </div>
@@ -85,20 +181,53 @@
               <!-- Project card 6 DONE-->
               <div class="project__card">
                 <div class="project__picture">
-                  <img src="../img/projects-images/BDC/BDC_01.png" alt="" />
+                  <img
+                    src="../img/projects-images/BDC/BDC_01.png"
+                    alt="Image du projet de maison individuelle et d'atelier d'artiste "
+                  />
+                  <!------------------------------------------->
+                  <!-- DIV FOR HOVER AND LINK TO THE PROJECT -->
+                  <!------------------------------------------->
+                  <a href=""
+                    ><div class="project__picture-hover">
+                      <img
+                        src="../img/icons/hover-more-icon.png"
+                        alt="- "
+                        class="more-icon"
+                      /></div
+                  ></a>
                 </div>
                 <a href="#">Maison individuelle et atelier d’artiste</a>
               </div>
             </div>
           </div>
-          <!-- End 2nd row (END)-->
-          <!-- 3rd row (START)-->
+          <!--------------------->
+          <!-- 2nd row (END) -->
+          <!--------------------->
+
+          <!--------------------->
+          <!-- 3rd row (START) -->
+          <!--------------------->
           <div class="row">
             <div class="col-md-4">
               <!-- Project card 7 DONE -->
               <div class="project__card">
                 <div class="project__picture">
-                  <img src="../img/projects-images/BGH/BGH_01.png" alt="" />
+                  <img
+                    src="../img/projects-images/BGH/BGH_01.png"
+                    alt="Image du projet d'installation éphémère pour les JO 2024"
+                  />
+                  <!------------------------------------------->
+                  <!-- DIV FOR HOVER AND LINK TO THE PROJECT -->
+                  <!------------------------------------------->
+                  <a href=""
+                    ><div class="project__picture-hover">
+                      <img
+                        src="../img/icons/hover-more-icon.png"
+                        alt="- "
+                        class="more-icon"
+                      /></div
+                  ></a>
                 </div>
                 <a href="#">Installation éphémère pour les JO 2024</a>
               </div>
@@ -107,7 +236,21 @@
               <!-- Project card 8 -->
               <div class="project__card">
                 <div class="project__picture">
-                  <img src="../img/projects-images/NSM/NSM_01.png" alt="" />
+                  <img
+                    src="../img/projects-images/NSM/NSM_01.png"
+                    alt="Image du projet de construction de logements sociaux"
+                  />
+                  <!------------------------------------------->
+                  <!-- DIV FOR HOVER AND LINK TO THE PROJECT -->
+                  <!------------------------------------------->
+                  <a href=""
+                    ><div class="project__picture-hover">
+                      <img
+                        src="../img/icons/hover-more-icon.png"
+                        alt="- "
+                        class="more-icon"
+                      /></div
+                  ></a>
                 </div>
                 <a href="#">Construction de logements collectifs</a>
               </div>
@@ -116,20 +259,53 @@
               <!-- Project card 4 -->
               <div class="project__card">
                 <div class="project__picture">
-                  <img src="../img/projects-images/ROU/ROU_03.png" alt="" />
+                  <img
+                    src="../img/projects-images/ROU/ROU_03.png"
+                    alt="Image du projet dans le quartier Saint-Sever"
+                  />
+                  <!------------------------------------------->
+                  <!-- DIV FOR HOVER AND LINK TO THE PROJECT -->
+                  <!------------------------------------------->
+                  <a href=""
+                    ><div class="project__picture-hover">
+                      <img
+                        src="../img/icons/hover-more-icon.png"
+                        alt="- "
+                        class="more-icon"
+                      /></div
+                  ></a>
                 </div>
                 <a href="#">Étude urbaine - quartier Saint-Sever</a>
               </div>
             </div>
           </div>
-          <!-- End 3rd row (END)-->
-          <!-- 4th row (START)-->
+          <!------------------->
+          <!-- 3rd row (END) -->
+          <!------------------->
+
+          <!--------------------->
+          <!-- 4TH row (START) -->
+          <!--------------------->
           <div class="row">
             <div class="col-md-4">
               <!-- Project card 10 -->
               <div class="project__card">
                 <div class="project__picture">
-                  <img src="../img/projects-images/DKQ/DKQ_01.png" alt="" />
+                  <img
+                    src="../img/projects-images/DKQ/DKQ_01.png"
+                    alt="Image du projet Môle 1 "
+                  />
+                  <!------------------------------------------->
+                  <!-- DIV FOR HOVER AND LINK TO THE PROJECT -->
+                  <!------------------------------------------->
+                  <a href=""
+                    ><div class="project__picture-hover">
+                      <img
+                        src="../img/icons/hover-more-icon.png"
+                        alt="-"
+                        class="more-icon"
+                      /></div
+                  ></a>
                 </div>
                 <a href="#">Étude urbaine - Môle 1</a>
               </div>
@@ -138,7 +314,21 @@
               <!-- Project card 11 -->
               <div class="project__card">
                 <div class="project__picture">
-                  <img src="../img/projects-images/BDX/BDX_04.png" alt="" />
+                  <img
+                    src="../img/projects-images/BDX/BDX_04.png"
+                    alt="Image du projet de la caserne des pompiers de la Benauge à Bordeaux "
+                  />
+                  <!------------------------------------------->
+                  <!-- DIV FOR HOVER AND LINK TO THE PROJECT -->
+                  <!------------------------------------------->
+                  <a href=""
+                    ><div class="project__picture-hover">
+                      <img
+                        src="../img/icons/hover-more-icon.png"
+                        alt="-"
+                        class="more-icon"
+                      /></div
+                  ></a>
                 </div>
                 <a href="#"
                   >Étude urbaine - caserne des pompiers de la Benauge</a
@@ -146,15 +336,24 @@
               </div>
             </div>
           </div>
-          <!-- End 4th row (END)-->
+          <!--------------------->
+          <!--- 4TH row (END) --->
+          <!--------------------->
         </div>
+        <!------------------------->
         <!-- PROJECTS GRID (END) -->
+        <!------------------------->
       </section>
+      <!---------------------------->
+      <!-- PROJECTS section (END) -->
+      <!---------------------------->
     </main>
+    <div id="footer-content"></div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/hover-mobile.js"></script>
   </body>
 </html>

@@ -4,16 +4,179 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>atelier oda</title>
-    <link rel="stylesheet" href="/assets/css/style.min.css" />
-    s
+    <link rel="stylesheet" href="../css/index.min.css" />
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(document).ready(function () {
-        $("#header-content").load("header.html");
+        $("#header-content").load("header.html", function () {
+          const currentPage = window.location.pathname.split("/").pop();
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        });
+
+        $("#footer-content").load("footer.html", function () {});
       });
     </script>
   </head>
   <body>
     <div id="header-content"></div>
+
+    <main>
+      <!-------------------------->
+      <!-- HERO section (START) -->
+      <!-------------------------->
+      <section class="hero">
+        <!---------------------->
+        <!-- Carousel (START) -->
+        <!---------------------->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../img/projects-images/VIL/villabe-vue-exterieure.jpg"
+                class="d-block w-100"
+                alt="Image du projet du Conservatoire de musique Yves Henry"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/projects-images/HOS/HOS_O3.png"
+                class="d-block w-100"
+                alt="Image du projet d'une maison individuelle"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/projects-images/CLU/cluny-perspective-exterieure.jpg"
+                class="d-block w-100"
+                alt="Image du projet de Centre social de la ville de Cluny"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-------------------->
+        <!-- Carousel (END) -->
+        <!-------------------->
+
+        <!--------------------------->
+        <!-- Project title (START) -->
+        <!--------------------------->
+        <div class="hero__project-info-container">
+          <p class="project__title">Conservatoire de musique Yves Henry</p>
+          <p class="project__location">Villabé (91)</p>
+        </div>
+        <!--------------------------->
+        <!-- Project title (START) -->
+        <!--------------------------->
+      </section>
+      <!-------------------------->
+      <!-- HERO section (END) -->
+      <!-------------------------->
+
+      <!-------------------------------->
+      <!-- Project highlights (START) -->
+      <!-------------------------------->
+      <section class="projects-highlights">
+        <!------------------------------>
+        <!-- Portfolio button (START) -->
+        <!------------------------------>
+        <div class="portfolio-btn-container">
+          <h4>MON PORTFOLIO</h4>
+          <a href="#">
+            <button class="btn-portfolio">
+              Référence 2026 (PDF, 25.6 MB)
+              <img
+                class=""
+                src="/assets/img/projects-images/align-bottom-svgrepo-com 1.svg"
+              />
+            </button>
+          </a>
+        </div>
+        <!------------------------------>
+        <!-- Portfolio button (END) -->
+        <!------------------------------>
+      </section>
+      <!------------------------------>
+      <!-- Project highlights (END) -->
+      <!------------------------------>
+
+      <!-------------------------------->
+      <!-- Atelier highlights (START) -->
+      <!-------------------------------->
+      <section class="atelier-highlights">
+        <div class="atelier-highlights__informations-wrapper">
+          <div class="atelier-highlights__informations">
+            <p class="informations-title"><strong>projets</strong> réalisés</p>
+            <ul>
+              <li class="informations-item">
+                Réhabilitation et extension d’une maison individuelle (40)
+              </li>
+              <li class="informations-item">
+                Extension du conservatoire Yves Henry (91)
+              </li>
+              <li class="informations-item">
+                Extension du conservatoire Yves Henry (91)
+              </li>
+            </ul>
+          </div>
+          <div class="atelier-highlights__informations">
+            <p class="informations-title"><strong>maître d'ouvrage</strong></p>
+            <ul>
+              <li class="informations-item">Grand Paris Sud</li>
+              <li class="informations-item">Ville de Paris</li>
+              <li class="informations-item">Ville de Cluny</li>
+            </ul>
+          </div>
+          <div class="atelier-highlights__informations">
+            <p class="informations-title">
+              <strong>partenaires</strong> avec qui j'ai travaillé
+            </p>
+            <ul>
+              <li class="informations-item">Albert & Compagnie</li>
+              <li class="informations-item">Gec Ingenierie</li>
+              <li class="informations-item">hort</li>
+            </ul>
+          </div>
+        </div>
+        <a href="" class="atelier-highlights__link backlink-to-full-page"
+          >Visiter l'atelier</a
+        >
+      </section>
+      <!------------------------------>
+      <!-- Atelier highlights (END) -->
+      <!------------------------------>
+    </main>
+    <div id="footer-content"></div>
   </body>
 </html>

@@ -19,9 +19,9 @@
   font-size: 20px;
   gap: 80px;
 }
-@media (max-width: 768px) {
-  .navbar-bar {
-    gap: 40px;
+@media (max-width: 480px) {
+  .navbar-nav {
+    gap: 20px;
   }
 }
 

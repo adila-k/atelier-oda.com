@@ -1,32 +1,51 @@
-.project__card {
-  width: 100%;
-}
-
-.project__picture {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
-}
-
-.project__picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.more-icon {
-  position: absolute;
+/************************************/
+/*********** Project card ***********/
+/************************************/
+.project {
+  &__card {
+    width: 100%;
+  }
+  &__picture {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-hover {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.403);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      & .more-icon {
+        height: 50px;
+        width: 50px;
+      }
+      &.active {
+        opacity: 1;
+      }
+    }
+    /************************************/
+    /*********** Hover effect ***********/
+    /************************************/
+    &-hover:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .projects-grid .row {
   --bs-gutter-x: 70px;
-}
-.projects-grid .row + .row {
-  margin-top: 120px;
-}
-
-/* Hover effect */
-
-.project__picture img:hover {
-  filter: brightness(50%);
+  & + .row {
+    margin-top: 120px;
+  }
 }
