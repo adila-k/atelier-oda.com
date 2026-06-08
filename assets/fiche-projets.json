@@ -9,7 +9,9 @@
     "surface": "230m²",
     "equipe": "oda (architecte mandataire), hort (architecte associé), Gec Ingénierie (bureau d'études TCE), Albert & Compagnie (bureau d'études HQE), AgirAcoustique (bureau d'études acoustiques)",
     "images": "atelier hugo louaintier",
-    "img_1": ""
+    "img_1": "/assets/img/projects-images/VIL/villabe-vue-exterieure.jpg",
+    "img_2": "assets/img/VIL/villabe-coupe-01.jpg",
+    "img_3": "assets/img/VIL/villabe-coupe-02.jpg"
   },
 
   {
@@ -38,7 +40,7 @@
     "nom": "Centre social",
     "localisation": "Cluny (71)",
     "programme": "Construction d'un centre social",
-    "maitrise-ouvrage": "Ville de Cluny",
+    "maitrise_ouvrage": "Ville de Cluny",
     "mission": "Concours",
     "prix": "1 million d'€ H.T.",
     "surface": "300m²",

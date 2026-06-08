@@ -1,5 +1,9 @@
 .navbar {
   background-color: #fefbf8 !important;
+  padding: 20px 0;
+  @media (max-width: 480px) {
+    padding-top: 90px;
+  }
 }
 
 .navbar__title--logo {
