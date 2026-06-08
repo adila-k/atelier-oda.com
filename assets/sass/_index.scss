@@ -18,9 +18,14 @@
 
 .projects-highlights {
   &__carousel {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
     &-project__navigation {
       display: flex;
       flex-direction: column;
+      flex-wrap: nowrap;
     }
     &__cards-wrapper {
       display: flex;
