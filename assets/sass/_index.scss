@@ -4,16 +4,26 @@
   align-items: flex-end;
   gap: 70px;
   padding: 150px 0 100px;
+
   &__informations-wrapper {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   &__informations {
-    width: 500px;
+    min-width: 400px;
     flex: 1;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    & ul {
+      padding: 0;
+    }
     & li {
       list-style-type: none;
       text-align: left;
@@ -21,10 +31,18 @@
   }
   &__informations:first-child {
     padding-right: 15px;
+    @media (max-width: 768px) {
+      padding-right: 0;
+    }
   }
   &__informations:not(:first-child) {
     border-left: 0.5px solid #3b3029;
     padding-left: 15px;
+    @media (max-width: 768px) {
+      border-left: 0;
+      border-top: 0.5px solid #3b3029;
+      padding-left: 0;
+    }
   }
 }
 .informations-title {
