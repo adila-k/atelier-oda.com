@@ -17,25 +17,40 @@
 /*****************************/
 
 .projects-highlights {
+  &__carousel-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    gap: 30px;
+    padding-bottom: 70px;
+  }
   &__carousel {
-    &-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    &__cards-wrapper {
       display: flex;
-      flex-direction: column;
+      flex-flow: row wrap;
+      gap: 60px;
+      height: 430px;
     }
     &-project__navigation {
       display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
-    &__cards-wrapper {
-      display: flex;
-      flex-flow: row no-wrap;
-      height: 530px;
+      flex-flow: column nowrap;
+      align-self: flex-end;
+      gap: 20px;
     }
     &__card {
-      overflow: hidden;
+      height: 100%;
+      width: 320px;
       &__picture {
-        height: 400px;
+        overflow: hidden;
+      }
+      & img {
+        object-fit: cover;
       }
     }
   }
