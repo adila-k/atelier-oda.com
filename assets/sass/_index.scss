@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+  body {
+    padding: 0 16px;
+  }
+}
+
 .atelier-highlights {
   display: flex;
   flex-flow: column nowrap;
@@ -33,6 +39,12 @@
     padding-right: 15px;
     @media (max-width: 768px) {
       padding-right: 0;
+      padding-bottom: 40px;
+    }
+  }
+  &__informations:nth-child(2) {
+    @media (max-width: 768px) {
+      padding: 40px 0;
     }
   }
   &__informations:not(:first-child) {
@@ -42,6 +54,7 @@
       border-left: 0;
       border-top: 0.5px solid #3b3029;
       padding-left: 0;
+      padding-top: 40px;
     }
   }
 }
