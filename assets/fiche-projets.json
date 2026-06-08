@@ -1,0 +1,121 @@
+[
+  {
+    "id": "1",
+    "nom": "Extension d'un conservatoire de musique",
+    "localisation": "Villabé (91)",
+    "programme": "Extension du conservatoire Yves Henry",
+    "mission": "Concours",
+    "prix": "1 million d'€ H.T.",
+    "surface": "230m²",
+    "equipe": "oda (architecte mandataire), hort (architecte associé), Gec Ingénierie (bureau d'études TCE), Albert & Compagnie (bureau d'études HQE), AgirAcoustique (bureau d'études acoustiques)",
+    "images": "atelier hugo louaintier"
+  },
+
+  {
+    "id": "2",
+    "nom": "Appel à idées",
+    "localisation": "Paris (75)",
+    "programme": "Appel à idées",
+    "maitrise-ouvrage": "Pavillon de l'Arsenal",
+    "equipe": "oda (architecte mandataire), Ecovégétal (Bureau d'études techniques)",
+    "images": "oda"
+  },
+
+  {
+    "id": "3",
+    "nom": "Maison Individuelle",
+    "localisation": "Hossegor (40)",
+    "programme": "Rénovation et extension d'une maison individuelle",
+    "maitrise-ouvrage": "Privé",
+    "mission": "Mission Complète",
+    "surface": "195m²",
+    "images": "atelier hugo louaintier"
+  },
+
+  {
+    "id": "4",
+    "nom": "Centre social",
+    "localisation": "Cluny (71)",
+    "programme": "Construction d'un centre social",
+    "maitrise-ouvrage": "Ville de Cluny",
+    "mission": "Concours",
+    "prix": "1 million d'€ H.T.",
+    "surface": "300m²",
+    "equipe": "oda (architecte mandataire) - Hort (Architecte associé) - TECO (BE structure) - Projelec (BE fluides) - ME2CO (Economiste)",
+    "images": "oda"
+  },
+
+  {
+    "id": "5",
+    "nom": "Logements collectifs",
+    "localisation": "Neuilly-sur-Marne (93)",
+    "programme": "Construction de 50 logements collectifs",
+    "maitrise-ouvrage": "Ville de Neuilly-sur-Marne",
+    "mission": "Concours",
+    "equipe": "oda - sam architecture",
+    "images": "vizzlab"
+  },
+
+  {
+    "id": "6",
+    "nom": "Installation éphémère",
+    "localisation": "Paris (75)",
+    "programme": "Signal urbain pour les JO 2024",
+    "maitrise-ouvrage": "Faire Paris - Pavillon de l'Arsenal",
+    "mission": "Appel à idées",
+    "equipe": "oda (architecte mandataire)",
+    "images": "oda"
+  },
+
+  {
+    "id": "7",
+    "nom": "Etude urbaine",
+    "localisation": "Bordeaux (33)",
+    "programme": "Etude urbaine et requalification de la caserne des pompiers de la Benauge",
+    "maitrise-ouvrage": "Eurapan",
+    "mission": "Appel à idées",
+    "equipe": "Olivier Duffé - Agnès Lahaye",
+    "images": "oda"
+  },
+
+  {
+    "id": "8",
+    "nom": "Etude urbaine",
+    "localisation": "Rouen (76)",
+    "programme": "Etude urbaine et requalification du quartier Saint-Sever",
+    "maitrise-ouvrage": "Europan",
+    "mission": "Appel à idéees",
+    "images": "oda"
+  },
+
+  {
+    "id": "9",
+    "nom": "Maison individuelle et atelier d'artiste",
+    "localisation": "Bordeaux (33)",
+    "programme": "Construction d'une maison individuelle et d'un atelier d'artiste",
+    "mission": "Concours",
+    "images": "oda"
+  },
+
+  {
+    "id": "10",
+    "nom": "Passerelle",
+    "localisation": "Dunkerque (59)",
+    "programme": "Construction d'une passerelle pour les piétons et les cycles",
+    "maitrise-ouvrage": "Ville de Dunkerque",
+    "mission": "Concours",
+    "prix": "3 million d'€ H.T.",
+    "equipe": "Olivier Duffé - Nicolas Têtu - Terrell (BE structure)"
+  },
+
+  {
+    "id": "11",
+    "nom": "Etude urbaine",
+    "localisation": "Dunkerque (59)",
+    "programme": "Requalification du Môle 1",
+    "maitrise-ouvrage": "Ville de Dunkerque",
+    "mission": "Concours",
+    "equipe": "Olivier Duffé - Nicolas Têtu",
+    "images": "Nicolas Têtu"
+  }
+]
