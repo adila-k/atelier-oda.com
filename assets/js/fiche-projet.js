@@ -32,6 +32,11 @@ if (!projet) {
   }
 
   // Données texte
+  const detail = document.createElement("div");
+  detail.classList.add("detail");
+  detail.textContent = "Detail du projet";
+  sectionFiche.appendChild(detail);
+
   const champs = [
     { label: "Programme", key: "programme" },
     { label: "Mission", key: "mission" },
