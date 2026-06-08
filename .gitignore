@@ -1,5 +1,4 @@
 node_modules
 package-lock.json
 package.json
-style.scss
-style.min.css
+assets/css/style.css

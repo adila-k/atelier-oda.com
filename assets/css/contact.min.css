@@ -1,1 +1,1 @@
-.info-contact{padding:24px 0;font-size:18px}.header-contact{font-size:24px}.header-contact-title{font-size:38px}
+.info-contact{padding:24px 0;font-size:18px}@media(max-width: 768px){.info-contact{padding:24px 0;font-size:16px}}.header-contact-name{font-size:24px}@media(max-width: 768px){.header-contact-name{font-size:18px}}.header-contact-title{font-size:38px}.block-contact{margin-bottom:50px}
