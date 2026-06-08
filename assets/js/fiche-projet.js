@@ -1,36 +1,51 @@
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
 const reponse = await fetch("/assets/fiche-projets.json");
-const fiche = await reponse.json();
+const fiches = await reponse.json();
 
-const projet = fiche[0];
+const projet = fiches.find((p) => p.id === id);
 
-const nomProjet = document.createElement("h1");
-nomProjet.innerText = projet.nom;
-const villeProjet = document.createElement("p");
-villeProjet.innerText = projet.localisation;
-const imageProjet = document.createElement("img");
-imageProjet.src = projet.img_1;
-const programmeProjet = document.createElement("p");
-programmeProjet.innerText = projet.programme;
-const missionProjet = document.createElement("p");
-missionProjet.innerText = projet.mission;
-const prixProjet = document.createElement("p");
-prixProjet.innerText = projet.prix;
-const surfaceProjet = document.createElement("p");
-surfaceProjet.innerText = projet.surface;
-const maitriseProjet = document.createElement("p");
-maitriseProjet.innerText = projet.maitrise_ouvrage;
-const equipeProjet = document.createElement("p");
-equipeProjet.innerText = projet.equipe;
+if (!projet) {
+  document.querySelector(".fiche").innerText = "Projet introuvable.";
+} else {
+  const sectionFiche = document.querySelector(".fiche");
 
-const sectionFiche = document.querySelector(".fiche");
+  // Titre et localisation
+  const nom = document.createElement("h1");
+  nom.innerText = projet.nom ?? "";
+  sectionFiche.appendChild(nom);
 
-sectionFiche.appendChild(nomProjet);
-sectionFiche.appendChild(villeProjet);
-sectionFiche.appendChild(imageProjet);
+  const localisation = document.createElement("p");
+  localisation.innerText = projet.localisation ?? "";
+  sectionFiche.appendChild(localisation);
 
-sectionFiche.appendChild(programmeProjet);
-sectionFiche.appendChild(missionProjet);
-sectionFiche.appendChild(prixProjet);
-sectionFiche.appendChild(surfaceProjet);
-sectionFiche.appendChild(maitriseProjet);
-sectionFiche.appendChild(equipeProjet);
+  // Images — on boucle sur img_1 à img_7
+  for (let i = 1; i <= 7; i++) {
+    const src = projet[`img_${i}`];
+    if (src) {
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = projet.nom;
+      sectionFiche.appendChild(img);
+    }
+  }
+
+  // Données texte
+  const champs = [
+    { label: "Programme", key: "programme" },
+    { label: "Mission", key: "mission" },
+    { label: "Prix", key: "prix" },
+    { label: "Surface", key: "surface" },
+    { label: "Maîtrise d'ouvrage", key: "maitrise_ouvrage" },
+    { label: "Équipe", key: "equipe" },
+  ];
+
+  champs.forEach(({ label, key }) => {
+    if (projet[key]) {
+      const p = document.createElement("p");
+      p.innerText = `${label} : ${projet[key]}`;
+      sectionFiche.appendChild(p);
+    }
+  });
+}
