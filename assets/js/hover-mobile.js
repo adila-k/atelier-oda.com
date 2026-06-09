@@ -1,4 +1,5 @@
 let windowWidth = innerWidth;
+console.log("largeur écran", windowWidth);
 if (windowWidth < 768) {
   document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".project__card");
@@ -27,11 +28,9 @@ if (windowWidth < 768) {
         const isNearCenter = Math.abs(cardCenter - screenCenter) < 150;
 
         if (isNearCenter) {
-          card.querySelector(".project__picture-hover").classList.add("active");
+          card.querySelector(".picture-hover").classList.add("active");
         } else {
-          card
-            .querySelector(".project__picture-hover")
-            .classList.remove("active");
+          card.querySelector(".picture-hover").classList.remove("active");
         }
       });
     });

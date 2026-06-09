@@ -76,6 +76,10 @@
 
 .projects-highlights {
   padding-top: 200px;
+  .picture-hover {
+    opacity: 0;
+    pointer-events: none;
+  }
   &__carousel-wrapper {
     display: flex;
     flex-flow: column nowrap;
@@ -142,11 +146,6 @@
       }
     }
   }
-}
-
-.picture-hover {
-  opacity: 0;
-  pointer-events: none;
 }
 
 /****************************************/
