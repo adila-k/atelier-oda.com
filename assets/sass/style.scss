@@ -126,3 +126,17 @@ h4 {
     opacity: 1;
   }
 }
+
+.page-weight-info {
+  font-size: 48px;
+  color: #3b3029;
+  text-align: center;
+  margin-top: 0px;
+
+  &--text {
+    font-size: 18px;
+    color: #3b3029;
+    text-align: center;
+    margin-top: 0px;
+  }
+}
