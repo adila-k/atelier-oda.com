@@ -12,6 +12,7 @@ if (!projet) {
   const sectionFiche = document.querySelector(".fiche");
 
   // Titre et localisation
+
   const nom = document.createElement("h1");
   nom.innerText = projet.nom ?? "";
   sectionFiche.appendChild(nom);
@@ -21,7 +22,12 @@ if (!projet) {
   localisation.innerText = projet.localisation ?? "";
   sectionFiche.appendChild(localisation);
 
-  // Affichage des images
+  /*   
+=============================================
+------------AFFICHAGE DES IMAGES-------------
+=============================================
+ */
+
   for (let i = 1; i <= 7; i++) {
     const src = projet[`img_${i}`];
     if (src) {
@@ -39,16 +45,20 @@ if (!projet) {
     }
   }
 
-  const detail_title = document.createElement("div");
-  detail_title.classList.add("detail_projet");
-  detail_title.textContent = "Detail du projet";
-  sectionFiche.appendChild(detail_title);
-
   /*   
 =============================================
 ------------DETAIL DES PROJETS---------------
 =============================================
  */
+
+  //TITRE SECTION
+
+  const detail_title = document.createElement("div");
+  detail_title.classList.add("detail_projet");
+  detail_title.textContent = "Detail du projet";
+  sectionFiche.appendChild(detail_title);
+
+  //INFOS PROJETS
 
   function createDetail(titleText, value) {
     const container = document.createElement("div");
@@ -62,7 +72,8 @@ if (!projet) {
     info.classList.add("detail_info");
     info.innerText = value ?? "";
 
-    // Si la valeur est vide, on masque tout le bloc
+    // MASQUAGE DU BLOC SI VALEUR VIDE
+
     if (!value) {
       container.style.display = "none";
     }

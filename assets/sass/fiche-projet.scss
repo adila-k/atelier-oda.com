@@ -4,11 +4,13 @@
 ===================================== */
 .localisation {
   font-size: 32px;
+  font-weight: 100;
 
   @media (max-width: 480px) {
     font-size: 18px;
   }
 }
+
 .detail_projet {
   font-size: 36px;
   text-transform: uppercase;
@@ -18,9 +20,18 @@
   }
 }
 
+.detail_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: solid 1px #3b3029;
+  align-items: stretch;
+}
+
 .detail_title {
   font-size: 20px !important;
   text-transform: uppercase;
+  border-bottom: solid 3px #3b3029;
 
   @media (max-width: 480px) {
     font-size: 16px;
@@ -29,6 +40,9 @@
 
 .detail_info {
   font-size: 18px;
+  text-align: right;
+  max-width: 50%;
+  padding: 10px 0;
 
   @media (max-width: 480px) {
     font-size: 16px;
@@ -41,13 +55,16 @@
 ===================================== */
 
 .image_principale {
-  width: 100%;
   display: block;
+  width: 100%;
+  max-height: 900px;
+  object-fit: cover;
 }
 
 .miniature {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
+  margin: 50px 10px 50px 0;
   gap: 10px;
   width: 260px;
   height: 260px;
