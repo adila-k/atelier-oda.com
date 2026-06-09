@@ -53,3 +53,5 @@ function updateArrows(activeIndex) {
 }
 
 updateArrows(activeIndex);
+
+cards.forEach((card, index) => {});
