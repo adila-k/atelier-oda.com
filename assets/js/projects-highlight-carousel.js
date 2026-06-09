@@ -54,4 +54,10 @@ function updateArrows(activeIndex) {
 
 updateArrows(activeIndex);
 
-cards.forEach((card, index) => {});
+cards.forEach((card, index) => {
+  card.addEventListener("click", function () {
+    activeIndex = index;
+    setActiveCard(index);
+    updateArrows(index);
+  });
+});
