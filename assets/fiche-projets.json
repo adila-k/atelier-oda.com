@@ -13,7 +13,8 @@
     "img_2": "/assets/img/VIL/villabe-coupe-01.jpg",
     "img_3": "/assets/img/VIL/villabe-coupe-02.jpg",
     "img_4": "/assets/img/projects-images/VIL/villabe-plan-masse.jpg",
-    "img_5": "/assets/img/projects-images/VIL/villabe-plan-rdc.jpg"
+    "img_5": "/assets/img/projects-images/VIL/villabe-plan-rdc.jpg",
+    "feature": "true"
   },
 
   {
@@ -42,7 +43,8 @@
     "img_2": "/assets/img/projects-images/HOS/HOS_O1.png",
     "img_3": "/assets/img/projects-images/HOS/HOS_O4.png",
     "img_4": "/assets/img/projects-images/HOS/hossegor-axonometrie.jpg",
-    "img_5": "/assets/img/projects-images/HOS/HOS_O3.png"
+    "img_5": "/assets/img/projects-images/HOS/HOS_O3.png",
+    "feature": "true"
   },
 
   {
@@ -62,7 +64,8 @@
     "img_4": "/assets/img/projects-images/CLU/cluny-plan-masse.jpg",
     "img_5": "/assets/img/projects-images/CLU/cluny-coupe.jpg",
     "img_6": "/assets/img/projects-images/CLU/cluny-façade.jpg",
-    "img_7": "/assets/img/projects-images/CLU/cluny-perspective-interieure.jpg"
+    "img_7": "/assets/img/projects-images/CLU/cluny-perspective-interieure.jpg",
+    "feature": "true"
   },
 
   {
