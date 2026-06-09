@@ -12,10 +12,10 @@
 /****** HERO SECTION ******/
 /**************************/
 .hero {
+  height: calc(100vh - 122.7px - 43px);
+  overflow: hidden;
   position: relative;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .slide {
@@ -30,11 +30,52 @@
     display: block;
   }
 }
+
+.hero__dots {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.hero__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  border: none;
+  cursor: pointer;
+
+  &.is-active {
+    background: #fff;
+  }
+}
+
+.hero__project-info-container {
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  text-transform: uppercase;
+  color: #3b3029;
+}
+
+.project__title,
+.project__location {
+  transition: opacity 0.5s ease;
+}
+
 /*****************************/
 /****** SECTION SECTION ******/
 /*****************************/
 
 .projects-highlights {
+  padding-top: 200px;
   &__carousel-wrapper {
     display: flex;
     flex-flow: column nowrap;
