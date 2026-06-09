@@ -76,4 +76,22 @@ fetch("../fiche-projets.json")
     // Create an array to get indexes of projects
     const randomProjects = randomIndexes.map((index) => data[index]);
     console.log(randomIndexes);
+
+    randomProjects.forEach((project, index) => {
+      const imageElement = cards[index].querySelector(
+        ".projects-highlights__carousel__card__picture-item",
+      );
+      const titleElement = cards[index].querySelector(
+        ".projects-highlights__carousel__card__title",
+      );
+      const linkElement = cards[index].querySelector(
+        ".projects-highlights__carousel-project-link",
+      );
+
+      imageElement.src = project.img_1;
+      titleElement.textContent = project.nom;
+      linkElement.href = `/assets/pages/fiche-projets.html?id=${project.id}`;
+
+      console.log(project);
+    });
   });
