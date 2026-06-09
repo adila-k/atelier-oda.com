@@ -50,8 +50,15 @@ fetch("../fiche-projets.json")
 
     // Update project's name and location
     function updateProjectInfo(data) {
-      projectName.textContent = data.nom;
-      projectLocation.textContent = data.localisation;
+      projectName.style.opacity = 0;
+      projectLocation.style.opacity = 0;
+
+      setTimeout(() => {
+        projectName.textContent = data.nom;
+        projectLocation.textContent = data.localisation;
+        projectName.style.opacity = 1;
+        projectLocation.style.opacity = 1;
+      }, 500); // correspond à la durée de la transition
     }
 
     // Dots
