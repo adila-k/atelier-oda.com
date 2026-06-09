@@ -28,6 +28,8 @@ if (!projet) {
 =============================================
  */
 
+  //AFFICHAGE DES IMAGES
+
   for (let i = 1; i <= 7; i++) {
     const src = projet[`img_${i}`];
     if (src) {
@@ -39,10 +41,33 @@ if (!projet) {
         img.classList.add("image_principale");
       } else {
         img.classList.add("miniature");
+
+        img.addEventListener("click", () => {
+          openOverlay(src, projet.nom);
+        });
       }
 
       sectionFiche.appendChild(img);
     }
+  }
+
+  //GENERATION DE L'OVERLAY
+
+  function openOverlay(src, alt) {
+    const overlay = document.createElement("div");
+    overlay.classList.add("overlay");
+
+    const imgOverlay = document.createElement("img");
+    imgOverlay.src = src;
+    imgOverlay.alt = alt;
+
+    overlay.appendChild(imgOverlay);
+    document.body.appendChild(overlay);
+
+    // Clic sur l'overlay → fermeture
+    overlay.addEventListener("click", () => {
+      overlay.remove();
+    });
   }
 
   /*   
