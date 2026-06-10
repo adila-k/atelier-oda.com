@@ -34,6 +34,7 @@
   font-size: 20px !important;
   text-transform: uppercase;
   border-bottom: solid 3px #3b3029;
+  padding: 10px 0;
 
   @media (max-width: 480px) {
     font-size: 16px;
@@ -49,6 +50,14 @@
   @media (max-width: 480px) {
     font-size: 16px;
   }
+
+  & a {
+    padding: 10px 0;
+  }
+}
+
+.detail_info a:hover {
+  color: #557768 !important;
 }
 
 .space {
