@@ -24,7 +24,7 @@ fetch("../fiche-projets.json")
       projetImageHoverIcon.src = "../img/icons/hover-more-icon.png";
       projetImageHoverLink.href = `/assets/pages/fiche-projets.html?id=${projet.id}`;
       const projetLink = document.createElement("a");
-      projetLink.textContent = projet.nom;
+      projetLink.textContent = projet.programme;
       projetLink.href = `/assets/pages/fiche-projets.html?id=${projet.id}`;
 
       // Link everything together
