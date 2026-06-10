@@ -77,7 +77,8 @@ h4 {
   border: 1px solid #3b3029;
   padding: 20px 30px;
   transition: all 0.3s ease-in-out;
-  &:hover {
+  &:hover,
+  &.active {
     background-color: #3b3029;
     color: #fefbf8;
     border: 1px solid transparent;
