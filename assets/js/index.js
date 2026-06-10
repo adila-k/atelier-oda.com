@@ -260,7 +260,7 @@ fetch("../fiche-projets.json")
       );
 
       imageElement.src = project.img_1;
-      titleElement.textContent = project.nom;
+      titleElement.textContent = project.programme;
       linkElement.href = `/assets/pages/fiche-projets.html?id=${project.id}`;
     });
   });

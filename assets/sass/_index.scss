@@ -164,7 +164,7 @@
       display: flex;
       flex-flow: column nowrap;
       align-self: flex-end;
-      gap: 20px;
+      gap: 0px;
       @media (max-width: 768px) {
         display: none;
       }
@@ -230,6 +230,10 @@
       }
     }
   }
+}
+
+.arrow-wrapper {
+  padding: 6px 0;
 }
 
 /****************************************/
