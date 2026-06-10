@@ -1,1 +1,1 @@
-.info-contact{padding:24px 0;font-size:18px}@media(max-width: 768px){.info-contact{padding:24px 0;font-size:16px}}.contact-name{font-size:24px}@media(max-width: 768px){.contact-name{font-size:18px}}.contact-title{font-size:38px}.block-contact{margin-bottom:50px}
+.info-contact{padding:24px 0;font-size:18px;width:50%}.info-contact:first-child{text-align:left}.info-contact:last-child{text-align:right}@media(max-width: 768px){.info-contact{font-size:16px}}.contact-name{font-size:24px}@media(max-width: 768px){.contact-name{font-size:18px}}.contact-title{font-size:38px}

@@ -1,8 +1,16 @@
 .info-contact {
   padding: 24px 0;
   font-size: 18px;
+  width: 50%;
+
+  &:first-child {
+    text-align: left;
+  }
+
+  &:last-child {
+    text-align: right;
+  }
   @media (max-width: 768px) {
-    padding: 24px 0;
     font-size: 16px;
   }
 }
@@ -15,6 +23,6 @@
 .contact-title {
   font-size: 38px;
 }
-.block-contact {
+/* .block-contact {
   margin-bottom: 50px;
-}
+} */
