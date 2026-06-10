@@ -26,6 +26,11 @@
   height: calc(100vh - 122.7px);
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    height: calc(100vh - 192.69px);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
 }
 .hero {
   flex: 1;
@@ -78,11 +83,26 @@
   text-transform: uppercase;
   color: #3b3029;
   padding-top: 10px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0;
+    font-size: 1rem;
+    align-items: flex-end;
+    padding-right: 10px;
+  }
+}
+
+.project__location {
+  font-weight: 200;
 }
 
 .project__title,
 .project__location {
   transition: opacity 0.5s ease;
+  @media (max-width: 768px) {
+    height: fit-content;
+    margin: 0;
+  }
 }
 
 .hero__scroll-down {
