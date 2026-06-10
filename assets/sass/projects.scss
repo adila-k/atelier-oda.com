@@ -18,8 +18,13 @@
   }
 }
 
+.projects-grid.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .projects-grid .row {
-  --bs-gutter-x: 70px;
+  --bs-gutter-x: 60px;
   & + .row {
     margin-top: 120px;
   }
