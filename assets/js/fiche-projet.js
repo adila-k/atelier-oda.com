@@ -71,9 +71,9 @@ if (!projet) {
   }
 
   /*   
-=============================================
-------------DETAIL DES PROJETS---------------
-=============================================
+==============================================
+------------DETAIL DES PROJETS----------------
+==============================================
  */
 
   //TITRE SECTION
@@ -129,6 +129,6 @@ if (!projet) {
   sectionFiche.appendChild(createDetail("Surface", projet.surface));
   sectionFiche.appendChild(createDetail("Equipe", projet.equipe));
   sectionFiche.appendChild(
-    createDetail("Image", projet.image, projet.images_url),
+    createDetail("Images", projet.images, projet.images_url),
   );
 }
