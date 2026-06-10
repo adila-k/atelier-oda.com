@@ -18,11 +18,13 @@ fetch("../fiche-projets.json")
       projetPictureWrapper.classList.add("project__picture");
       const projetImage = document.createElement("img");
       projetImage.src = projet.img_1;
+      projetImage.alt = projet.nom;
       const projetImageHover = document.createElement("div");
       projetImageHover.classList.add("picture-hover");
       const projetImageHoverIcon = document.createElement("img");
       const projetImageHoverLink = document.createElement("a");
       projetImageHoverIcon.classList.add("more-icon");
+      projetImageHoverIcon.alt = "Voir le projet";
       projetImageHoverIcon.src = "../img/icons/hover-more-icon.png";
       projetImageHoverLink.href = `/assets/pages/fiche-projets.html?id=${projet.id}`;
       const projetLink = document.createElement("a");
