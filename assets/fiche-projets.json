@@ -10,8 +10,8 @@
     "equipe": "oda (architecte mandataire), hort (architecte associé), Gec Ingénierie (bureau d'études TCE), Albert & Compagnie (bureau d'études HQE), AgirAcoustique (bureau d'études acoustiques)",
     "images": "atelier hugo louaintier",
     "img_1": "/assets/img/projects-images/VIL/villabe-vue-exterieure.jpg",
-    "img_2": "/assets/img/VIL/villabe-coupe-01.jpg",
-    "img_3": "/assets/img/VIL/villabe-coupe-02.jpg",
+    "img_2": "/assets/img/projects-images/VIL/villabe-coupe-01.jpg",
+    "img_3": "/assets/img/projects-images/VIL/villabe-coupe-02.jpg",
     "img_4": "/assets/img/projects-images/VIL/villabe-plan-masse.jpg",
     "img_5": "/assets/img/projects-images/VIL/villabe-plan-rdc.jpg",
     "featured": true
@@ -149,9 +149,9 @@
     "mission": "Concours",
     "prix": "3 million d'€ H.T.",
     "equipe": "Olivier Duffé - Nicolas Têtu - Terrell (BE structure)",
-    "img_1": "/assets/img/projects-images/DKP/DKP_01.png",
+    "img_1": "/assets/img/projects-images/DKP/DKP_03.png",
     "img_2": "/assets/img/projects-images/DKP/DKP_02.png",
-    "img_3": "/assets/img/projects-images/DKP/DKP_03.png"
+    "img_3": "/assets/img/projects-images/DKP/DKP_01.png"
   },
 
   {
