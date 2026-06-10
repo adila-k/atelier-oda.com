@@ -1,3 +1,22 @@
+///////////////////////////////
+// NO HEADER WHILE IN FOOTER //
+///////////////////////////////
+
+const header = document.getElementById("header-content");
+const footer = document.getElementById("footer-content");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      header.style.opacity = "0";
+    } else {
+      header.style.opacity = "1";
+    }
+  });
+});
+
+observer.observe(footer);
+
 ///////////////////
 // HERO CAROUSEL //
 ///////////////////
