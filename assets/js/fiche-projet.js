@@ -30,7 +30,7 @@ if (!projet) {
 
   //AFFICHAGE DES IMAGES
 
-  for (let i = 1; i <= 7; i++) {
+  for (let i = 1; i <= 10; i++) {
     const src = projet[`img_${i}`];
     if (src) {
       const img = document.createElement("img");
@@ -71,9 +71,9 @@ if (!projet) {
   }
 
   /*   
-=============================================
-------------DETAIL DES PROJETS---------------
-=============================================
+==============================================
+------------DETAIL DES PROJETS----------------
+==============================================
  */
 
   //TITRE SECTION
@@ -85,7 +85,7 @@ if (!projet) {
 
   //INFOS PROJETS
 
-  function createDetail(titleText, value) {
+  function createDetail(titleText, value, url = null) {
     const container = document.createElement("div");
     container.classList.add("detail_container");
 
@@ -96,6 +96,18 @@ if (!projet) {
     const info = document.createElement("div");
     info.classList.add("detail_info");
     info.innerText = value ?? "";
+
+    //LIEN CLIQUABLE SI URL
+
+    if (url) {
+      const lien = document.createElement("a");
+      lien.href = url;
+      lien.target = "_blank";
+      lien.textContent = value ?? "";
+      info.appendChild(lien);
+    } else {
+      info.innerText = value ?? "";
+    }
 
     // MASQUAGE DU BLOC SI VALEUR VIDE
 
@@ -116,5 +128,7 @@ if (!projet) {
   sectionFiche.appendChild(createDetail("Prix", projet.prix));
   sectionFiche.appendChild(createDetail("Surface", projet.surface));
   sectionFiche.appendChild(createDetail("Equipe", projet.equipe));
-  sectionFiche.appendChild(createDetail("Image", projet.image));
+  sectionFiche.appendChild(
+    createDetail("Images", projet.images, projet.images_url),
+  );
 }

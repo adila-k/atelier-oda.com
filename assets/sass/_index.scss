@@ -17,6 +17,9 @@
   top: 0;
   z-index: 100;
   transition: opacity 0.3s ease;
+  @media (max-width: 768px) {
+    position: static;
+  }
 }
 
 /**************************/
@@ -120,9 +123,15 @@
 
 .projects-highlights {
   padding-top: 200px;
+  @media (max-width: 768px) {
+    padding-top: 40px;
+  }
   .picture-hover {
     opacity: 0;
     pointer-events: none;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   &__carousel-wrapper {
     display: flex;
@@ -147,6 +156,8 @@
       height: 530px;
       @media (max-width: 768px) {
         flex-flow: column nowrap;
+        height: auto;
+        gap: 30px;
       }
     }
     &-project__navigation {
@@ -154,6 +165,9 @@
       flex-flow: column nowrap;
       align-self: flex-end;
       gap: 20px;
+      @media (max-width: 768px) {
+        display: none;
+      }
       & .is-disabled {
         color: #89817c;
         cursor: default;
@@ -162,10 +176,21 @@
     &__card {
       height: 100%;
       transition: all 0.4s ease;
+      @media (max-width: 768px) {
+        height: 250px;
+        width: 100%;
+      }
+
       &.is-active {
         flex-grow: 3;
         height: 100%;
         flex-basis: 440px;
+        @media (max-width: 768px) {
+          width: 100%;
+          height: auto;
+          flex-grow: unset;
+          flex-basis: unset;
+        }
         .picture-hover {
           pointer-events: auto;
           &:hover {
@@ -177,11 +202,20 @@
         flex-grow: 1;
         height: 400px;
         flex-basis: 320px;
+        @media (max-width: 768px) {
+          width: 100%;
+          height: auto;
+          flex-grow: unset;
+          flex-basis: unset;
+        }
       }
       &__picture {
         overflow: hidden;
         height: 100%;
         position: relative;
+        @media (max-width: 768px) {
+          height: 400px;
+        }
       }
       & img {
         width: 100%;
@@ -190,6 +224,9 @@
       }
       &__title {
         margin-top: 18px;
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
       }
     }
   }

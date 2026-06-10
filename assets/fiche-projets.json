@@ -9,6 +9,7 @@
     "surface": "230m²",
     "equipe": "oda (architecte mandataire), hort (architecte associé), Gec Ingénierie (bureau d'études TCE), Albert & Compagnie (bureau d'études HQE), AgirAcoustique (bureau d'études acoustiques)",
     "images": "atelier hugo louaintier",
+    "images_url": "https://atelierhugolouaintier.fr/",
     "img_1": "/assets/img/projects-images/VIL/villabe-vue-exterieure.webp",
     "img_2": "/assets/img/projects-images/VIL/villabe-coupe-01.webp",
     "img_3": "/assets/img/projects-images/VIL/villabe-coupe-02.webp",
@@ -39,6 +40,7 @@
     "mission": "Mission Complète",
     "surface": "195m²",
     "images": "atelier hugo louaintier",
+    "images_url": "https://atelierhugolouaintier.fr/",
     "img_1": "/assets/img/projects-images/HOS/HOS_O3.webp",
     "img_2": "/assets/img/projects-images/HOS/HOS_O1.webp",
     "img_3": "/assets/img/projects-images/HOS/HOS_O4.webp",
@@ -77,6 +79,7 @@
     "mission": "Concours",
     "equipe": "oda - sam architecture",
     "images": "vizzlab",
+    "images_url": "https://vizzlab.fr",
     "img_1": "/assets/img/projects-images/NSM/NSM_02.webp",
     "img_2": "/assets/img/projects-images/NSM/NSM_01.webp"
   },
