@@ -1,5 +1,7 @@
+//////////////
+// CAROUSEL //
+/////////////
 const windowWidth = window.innerWidth;
-
 fetch("../fiche-projets.json")
   .then((response) => response.json())
   .then((projets) => {
