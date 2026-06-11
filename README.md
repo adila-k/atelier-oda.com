@@ -62,9 +62,7 @@ Les contributions se font via pull request vers `main`.
 - **Nelly Fabre** — Développement & intégration
 - **Lucas Merlet** — Développement & intégration
 
-========================================================
------------------ENGLISH VERSION------------------------
-========================================================
+#### ENGLISH VERSION
 
 # atelier oda — Portfolio Website
 
