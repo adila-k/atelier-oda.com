@@ -21,7 +21,7 @@ hr {
     margin-bottom: 80px;
     @media (max-width: 767px) {
       flex-direction: column;
-      gap: 24px;
+      gap: 10px;
     }
     & > * {
       flex: 1 1 0;
@@ -58,10 +58,17 @@ hr {
       }
     }
 
-    &--value {
+    &--value,
+    --email {
       font-size: 16px;
       color: #3b3029;
       margin-bottom: 0;
+    }
+
+    &--email {
+      @media (max-width: 480px) {
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -71,8 +78,8 @@ hr {
   }
 
   &__scroll-btn {
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid #3b3029;
     background: transparent;
@@ -104,9 +111,12 @@ hr {
   }
 
   &--link {
-    font-size: 16px;
+    font-size: 20px;
     color: #3b3029 !important;
     text-decoration: none;
+    @media (max-width: 480px) {
+      display: none;
+    }
 
     &:hover {
       color: #557768 !important;

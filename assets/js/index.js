@@ -21,7 +21,7 @@ observer.observe(footer);
 // HERO CAROUSEL //
 ///////////////////
 
-fetch("../fiche-projets.json")
+fetch("/assets/fiche-projets.json")
   .then((response) => response.json())
   .then((data) => {
     const featuredProjects = data.filter(
@@ -232,7 +232,7 @@ cards.forEach((card, index) => {
 // GENERATE RANDOM CARDS ON PROJECT HIGHLIGHT CAROUSEL ///
 //////////////////////////////////////////////////////////
 
-fetch("../fiche-projets.json")
+fetch("/assets/fiche-projets.json")
   .then((response) => response.json())
   .then((data) => {
     // Create a table to store random indexes
