@@ -21,7 +21,7 @@ observer.observe(footer);
 // HERO CAROUSEL //
 ///////////////////
 
-fetch("/assets/fiche-projets.json")
+fetch("assets/fiche-projets.json")
   .then((response) => response.json())
   .then((data) => {
     const featuredProjects = data.filter(
@@ -232,7 +232,7 @@ cards.forEach((card, index) => {
 // GENERATE RANDOM CARDS ON PROJECT HIGHLIGHT CAROUSEL ///
 //////////////////////////////////////////////////////////
 
-fetch("/assets/fiche-projets.json")
+fetch("assets/fiche-projets.json")
   .then((response) => response.json())
   .then((data) => {
     // Create a table to store random indexes
@@ -261,6 +261,6 @@ fetch("/assets/fiche-projets.json")
 
       imageElement.src = project.img_1;
       titleElement.textContent = project.programme;
-      linkElement.href = `/assets/pages/fiche-projets.html?id=${project.id}`;
+      linkElement.href = `assets/pages/fiche-projets.html?id=${project.id}`;
     });
   });
