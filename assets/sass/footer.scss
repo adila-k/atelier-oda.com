@@ -123,3 +123,21 @@ hr {
     }
   }
 }
+
+.mentions-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  font-size: 16px;
+
+  & a {
+    padding-bottom: 0;
+  }
+  & a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+}

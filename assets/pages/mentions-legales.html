@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mentions légales | atelier oda - olivier duffé</title>
+    <link rel="stylesheet" href="/assets/css/style.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#header-content").load("header.html", function () {
+          const currentPage = window.location.pathname.split("/").pop();
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        });
+
+        $("#footer-content").load("footer.html", function () {});
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header-content"></div>
+    <main>
+      <h1 class="mb-5">Mentions légales</h1>
+      <p><strong>Dernière mise à jour :</strong> juin 2026</p>
+
+      <h4 class="fw-bold mt-5 mb-2">1. Éditeur du site</h4>
+      <p>Le présent site est édité par :</p>
+      <ul>
+        <li><strong>Raison sociale :</strong> Atelier ODA</li>
+        <li>
+          <strong>Nom du responsable :</strong> Olivier Duffé, architecte DPLG
+        </li>
+        <li><strong>Forme juridique :</strong> Entreprise individuelle</li>
+        <li>
+          <strong>Adresse :</strong> 42, rue des Meuniers, 93100 Montreuil,
+          France
+        </li>
+        <li><strong>Téléphone :</strong> +33 6 60 47 37 88</li>
+        <li><strong>Email :</strong> contact@atelier-oda.com</li>
+        <li><strong>N° SIRET :</strong> 534 264 767 00032</li>
+        <li><strong>Code APE :</strong> 7111Z – Activités d'architecture</li>
+        <li><strong>N° de TVA intracommunautaire :</strong> FR63494029747</li>
+        <li><strong>N° à l'Ordre des Architectes :</strong> 091783</li>
+        <li>
+          Ordre des Architectes d'Île-de-France – 148, rue du Faubourg
+          Saint-Martin, 75010 Paris
+        </li>
+      </ul>
+
+      <h4 class="fw-bold mt-5 mb-2">2. Directeur de la publication</h4>
+      <p>
+        Le directeur de la publication est Monsieur Olivier Duffé, en sa qualité
+        de responsable de l'entreprise individuelle Atelier ODA.
+      </p>
+      <h4 class="fw-bold mt-5 mb-2">3. Hébergeur du site</h4>
+      <p>Le site www.atelier-oda.com est hébergé par :</p>
+      <ul>
+        <li><strong>Hébergeur :</strong></li>
+        <li><strong>Adresse :</strong></li>
+        <li><strong>Site web :</strong></li>
+      </ul>
+
+      <h4 class="fw-bold mt-5 mb-2">4. Propriété intellectuelle</h4>
+      <p>
+        L'ensemble des éléments composant ce site (textes, photographies,
+        images, vidéos, graphismes, logo, architecture du site) est la propriété
+        exclusive d'Atelier ODA – Olivier Duffé, ou fait l'objet d'une
+        autorisation d'utilisation.
+      </p>
+      <p>
+        Toute reproduction, représentation, modification, publication ou
+        adaptation de tout ou partie de ces éléments, quel que soit le moyen ou
+        le procédé utilisé, est interdite sans l'autorisation écrite préalable
+        d'Atelier ODA, sous peine de contrefaçon au sens des articles L.335-2 et
+        suivants du Code de la propriété intellectuelle.
+      </p>
+
+      <h4 class="fw-bold mt-5 mb-2">5. Protection des données personnelles</h4>
+
+      <h5>5.1 Responsable du traitement</h5>
+      <p>
+        Le responsable du traitement des données personnelles collectées sur ce
+        site est Olivier Duffé, Atelier ODA, 42 rue des Meuniers, 93100
+        Montreuil.
+      </p>
+
+      <p><strong>Contact : </strong>contact@atelier-oda.com.</p>
+      <h5>5.2 Données collectées</h5>
+      <p>
+        Ce site ne dispose d'aucun formulaire de contact ni d'aucun espace
+        membre. Aucune donnée personnelle n'est collectée activement par le
+        biais du site.
+      </p>
+      <p>
+        Des données de navigation anonymisées peuvent toutefois être collectées
+        via des outils d'analyse d'audience (voir section 6 – Cookies), sans
+        permettre d'identifier personnellement les visiteurs.
+      </p>
+
+      <h5>5.3 Vos droits</h5>
+      <p>
+        Même en l'absence de collecte active de données personnelles, vous
+        disposez, conformément au RGPD (UE 2016/679) et à la loi Informatique et
+        Libertés, des droits d'accès, de rectification, d'effacement, de
+        limitation, de portabilité et d'opposition.
+      </p>
+      <p>
+        Pour exercer ces droits ou pour toute question relative à la protection
+        de vos données, vous pouvez contacter Atelier ODA à l'adresse
+        contact@atelier-oda.com. En cas de réponse insatisfaisante, vous pouvez
+        introduire une réclamation auprès de la CNIL (www.cnil.fr).
+      </p>
+
+      <h4 class="fw-bold mt-5 mb-2">6. Cookies</h4>
+      <p>
+        Le site www.atelier-oda.com est susceptible d'utiliser des cookies afin
+        d'améliorer l'expérience utilisateur et d'effectuer des mesures
+        d'audience anonymisées. Un cookie est un petit fichier texte déposé sur
+        votre appareil lors de la visite d'un site.
+      </p>
+      <p>
+        Conformément à la réglementation en vigueur, votre consentement est
+        recueilli avant le dépôt de tout cookie non strictement nécessaire au
+        fonctionnement du site. Vous pouvez à tout moment modifier vos
+        préférences en matière de cookies via les paramètres de votre
+        navigateur.
+      </p>
+
+      <h4 class="fw-bold mt-5 mb-2">7. Liens hypertextes</h4>
+      <p>
+        Le site peut contenir des liens vers des sites tiers. Atelier ODA ne
+        saurait être tenu responsable du contenu de ces sites externes, de leur
+        disponibilité, ou de l'utilisation faite des données personnelles par
+        ces tiers.
+      </p>
+
+      <h4 class="fw-bold mt-5 mb-2">8. Limitation de responsabilité</h4>
+      <p>
+        Atelier ODA s'efforce d'assurer l'exactitude et la mise à jour régulière
+        des informations diffusées sur ce site. Toutefois, Atelier ODA ne peut
+        garantir l'exactitude, la complétude ou l'actualité des informations
+        diffusées et décline toute responsabilité pour toute imprécision,
+        inexactitude ou omission portant sur des informations disponibles sur le
+        site.
+      </p>
+      <p>
+        Atelier ODA ne peut être tenu responsable des dommages directs ou
+        indirects résultant de l'accès au site ou de l'utilisation de son
+        contenu.
+      </p>
+
+      <h4 class="fw-bold mt-5 mb-2">
+        9. Droit applicable et juridiction compétente
+      </h4>
+      <p>
+        Les présentes mentions légales sont soumises au droit français. En cas
+        de litige relatif à leur interprétation ou à leur exécution, les
+        tribunaux français seront seuls compétents.
+      </p>
+    </main>
+    <div id="footer-content"></div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

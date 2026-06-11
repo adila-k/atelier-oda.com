@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>politique de confidentialité | atelier oda - olivier duffé</title>
+    <link rel="stylesheet" href="/assets/css/style.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#header-content").load("header.html", function () {
+          const currentPage = window.location.pathname.split("/").pop();
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        });
+
+        $("#footer-content").load("footer.html", function () {});
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header-content"></div>
+    <main>
+      <h1 class="mb-5">Politique de confidentialité</h1>
+      <p>
+        <strong>Site web :</strong> www.atelier-oda.com<br /><strong
+          >Dernière mise à jour :</strong
+        >
+        juin 2026
+      </p>
+      <p class="mt-4">
+        Atelier ODA – Olivier Duffé accorde une importance particulière à la
+        protection de votre vie privée. La présente politique de confidentialité
+        a pour objet de vous informer de manière transparente sur la façon dont
+        le site www.atelier-oda.com traite vos données personnelles,
+        conformément au Règlement Général sur la Protection des Données (RGPD –
+        UE 2016/679) et à la loi Informatique et Libertés du 6 janvier 1978
+        modifiée.
+      </p>
+      <h4 class="fw-bold mt-5 mb-2">1. Responsable du traitement</h4>
+      <ul>
+        <li>
+          <strong>Identité :</strong> Atelier ODA – Olivier Duffé, architecte
+          DPLG
+        </li>
+        <li>
+          <strong>Adresse :</strong> 42, rue des Meuniers, 93100 Montreuil,
+          France
+        </li>
+        <li><strong>Email :</strong> contact@atelier-oda.com</li>
+        <li><strong>Téléphone :</strong> +33 6 60 47 37 88</li>
+      </ul>
+
+      <h4 class="fw-bold mt-5 mb-2">2. Données collectées</h4>
+      <p>
+        Le site www.atelier-oda.com est un site vitrine. Il ne dispose d'aucun
+        formulaire de contact, d'aucun espace membre et d'aucun système de
+        paiement en ligne. En conséquence, aucune donnée personnelle vous
+        identifiant directement (nom, prénom, adresse email, numéro de
+        téléphone, etc.) n'est collectée lors de votre navigation sur ce site.
+      </p>
+      <h4 class="fw-bold mt-5 mb-2">3. Cookies et traceurs</h4>
+      <p>
+        Le site n'utilise aucun outil de mesure d'audience (Google Analytics,
+        Matomo ou similaire) et n'installe aucun cookie de traçage publicitaire
+        ou analytique sur votre appareil. Des cookies strictement techniques
+        peuvent être déposés par votre navigateur pour assurer le bon
+        fonctionnement du site (par exemple, pour mémoriser vos préférences
+        d'affichage). Ces cookies ne permettent pas de vous identifier
+        personnellement et ne nécessitent pas votre consentement au sens de la
+        réglementation en vigueur. Vous pouvez à tout moment configurer votre
+        navigateur pour refuser ou supprimer les cookies. Cette opération
+        n'affectera pas votre accès au contenu du site.
+      </p>
+
+      <h4 class="fw-bold mt-5 mb-2">4. Données de navigation</h4>
+      <p>
+        Comme tout site web, le serveur d'hébergement du site est susceptible
+        d'enregistrer automatiquement certaines données techniques lors de votre
+        connexion : adresse IP, type de navigateur, pages consultées, date et
+        heure d'accès. Ces données sont collectées par l'hébergeur à des fins de
+        sécurité et de maintenance technique. Ces informations sont traitées de
+        manière anonyme et agrégée ; elles ne permettent pas d'identifier
+        individuellement les visiteurs du site. Atelier ODA n'a pas accès à ces
+        données à titre nominatif.
+      </p>
+
+      <h4 class="fw-bold mt-5 mb-2">5. Partage des données avec des tiers</h4>
+      <p>
+        Atelier ODA ne collecte, ne vend, ne loue et ne transmet aucune donnée
+        personnelle vous concernant à des tiers à des fins commerciales ou
+        publicitaires. Le site peut contenir des liens vers des sites tiers
+        (réseaux sociaux, partenaires, références). Atelier ODA n'est pas
+        responsable des pratiques de confidentialité de ces sites externes et
+        vous invite à consulter leurs politiques respectives.
+      </p>
+
+      <h4 class="fw-bold mt-5 mb-2">6. Vos droits</h4>
+      <p>
+        Conformément au RGPD et à la loi Informatique et Libertés, vous disposez
+        des droits suivants concernant vos données personnelles :
+      </p>
+      <ul>
+        <li>
+          Droit d'accès : obtenir la confirmation que des données vous
+          concernant sont ou non traitées, et le cas échéant en obtenir une
+          copie.
+        </li>
+        <li>
+          Droit de rectification : demander la correction de données inexactes
+          ou incomplètes.
+        </li>
+        <li>
+          Droit à l'effacement : demander la suppression de vos données dans les
+          cas prévus par la réglementation.
+        </li>
+        <li>
+          Droit à la limitation du traitement : demander la suspension du
+          traitement de vos données.
+        </li>
+        <li>
+          Droit d'opposition : vous opposer à tout moment au traitement de vos
+          données.
+        </li>
+        <li>
+          Droit à la portabilité : recevoir vos données dans un format structuré
+          et lisible par machine.
+        </li>
+      </ul>
+      <p>
+        Pour exercer l'un de ces droits, vous pouvez contacter Atelier ODA à
+        l'adresse suivante : contact@atelier-oda.com, ou par courrier postal :
+        Atelier ODA, 42 rue des Meuniers, 93100 Montreuil.
+      </p>
+
+      <p>
+        Une réponse vous sera apportée dans un délai maximum d'un mois suivant
+        la réception de votre demande. En cas de réponse insatisfaisante, vous
+        avez la possibilité d'introduire une réclamation auprès de la Commission
+        Nationale de l'Informatique et des Libertés (CNIL) : www.cnil.fr – 3,
+        place de Fontenoy, TSA 80715, 75334 Paris Cedex 07.
+      </p>
+      <h4 class="fw-bold mt-5 mb-2">7. Sécurité des données</h4>
+      <p>
+        Bien qu'aucune donnée personnelle ne soit collectée activement, Atelier
+        ODA veille à ce que le site soit hébergé dans des conditions
+        garantissant un niveau de sécurité adapté, notamment par le recours à un
+        hébergeur professionnel assurant la protection des infrastructures.
+      </p>
+
+      <h4 class="fw-bold mt-5 mb-2">
+        8. Modifications de la présente politique
+      </h4>
+      <p>
+        Atelier ODA se réserve le droit de modifier la présente politique de
+        confidentialité à tout moment, notamment pour se conformer à l'évolution
+        de la réglementation applicable. La date de dernière mise à jour
+        figurant en haut de ce document sera actualisée en conséquence.
+      </p>
+      <p>
+        Nous vous encourageons à consulter régulièrement cette page pour prendre
+        connaissance des éventuelles modifications.
+      </p>
+      <h4 class="fw-bold mt-5 mb-2">9. Contact</h4>
+      <p>
+        Pour toute question relative à la présente politique de confidentialité
+        ou à la protection de vos données personnelles, vous pouvez contacter
+        Atelier ODA :
+      </p>
+      <ul>
+        <li><strong>Par email :</strong> contact@atelier-oda.com</li>
+        <li>
+          <strong>Par courrier :</strong> Atelier ODA – 42, rue des Meuniers,
+          93100 Montreuil, France
+        </li>
+      </ul>
+    </main>
+    <div id="footer-content"></div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
