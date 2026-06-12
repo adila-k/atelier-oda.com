@@ -11,7 +11,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+    ></script>
     <script>
       $(document).ready(function () {
         $("#header-content").load("assets/pages/header.html", function () {
@@ -33,6 +37,12 @@
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link
+      rel="preload"
+      as="image"
+      href="assets/img/projects-images/VIL/villabe-vue-exterieure.webp"
+      fetchpriority="high"
+    />
     <meta
       name="description"
       content="Atelier ODA, agence d'architecture fondée par Olivier Duffé. Découvrez des projets d'architecture contextuelle, durable et pragmatique, conçus avec exigence et sens du lieu."
@@ -185,6 +195,7 @@
                         src="assets/img/icons/hover-more-icon.png"
                         alt="-"
                         class="more-icon"
+                        loading="lazy"
                       /></div
                   ></a>
                   <img
@@ -213,6 +224,7 @@
                         src="assets/img/icons/hover-more-icon.png"
                         alt="-"
                         class="more-icon"
+                        loading="lazy"
                       /></div
                   ></a>
 
@@ -242,6 +254,7 @@
                         src="assets/img/icons/hover-more-icon.png"
                         alt="-"
                         class="more-icon"
+                        loading="lazy"
                       /></div
                   ></a>
                   <img

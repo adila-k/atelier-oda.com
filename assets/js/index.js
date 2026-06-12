@@ -52,6 +52,9 @@ fetch("assets/fiche-projets.json")
       img.className = "slide__img";
       img.src = data.src;
       img.alt = data.nom;
+      if (i === 0) {
+        img.fetchPriority = "high";
+      }
 
       div.appendChild(img);
       hero.insertBefore(div, dotsNav);
